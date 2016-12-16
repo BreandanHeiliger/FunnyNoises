@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_funny_noises"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.breandanheiliger.funnynoises.FunnyNoises"
+    android:background="@drawable/background">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Funny Noises"
+        android:textSize="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="85dp" />
+
+    <ImageButton
+        android:src="@drawable/chipmunk1"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/button2"
+        android:visibility="visible"
+        android:scaleType="centerCrop"
+        android:layout_width="80dp"
+        android:layout_height="80dp" />
+
+    <ImageButton
+        android:src="@drawable/cough_face"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/button2"
+        android:id="@+id/button3"
+        android:scaleType="centerCrop"
+        android:visibility="visible"
+        android:layout_width="80dp"
+        android:layout_height="80dp" />
+
+    <ImageButton
+        android:src="@drawable/drum_kit"
+        android:layout_below="@+id/button1"
+        android:layout_toStartOf="@+id/button2"
+        android:id="@+id/button4"
+        android:scaleType="centerCrop"
+        android:visibility="visible"
+        android:layout_width="80dp"
+        android:layout_height="80dp" />
+
+    <ImageButton
+        android:src="@drawable/villain"
+        android:layout_below="@+id/button3"
+        android:layout_toEndOf="@+id/button2"
+        android:id="@+id/button6"
+        android:scaleType="centerCrop"
+        android:visibility="visible"
+        android:layout_width="80dp"
+        android:layout_height="80dp" />
+
+    <ImageButton
+        android:src="@drawable/golf_ball"
+        android:id="@+id/button5"
+        android:scaleType="centerCrop"
+        android:visibility="visible"
+        android:layout_below="@+id/button2"
+        android:layout_toEndOf="@+id/button4"
+        android:layout_width="80dp"
+        android:layout_height="80dp" />
+
+    <ImageButton
+        android:src="@drawable/laughing_smiley"
+        android:id="@+id/button1"
+        android:scaleType="centerCrop"
+        android:visibility="visible"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignTop="@+id/button2"
+        android:layout_toStartOf="@+id/button2" />
+
+    <com.google.android.gms.ads.AdView
+        android:layout_width="100dp"
+        android:layout_height="25dp"
+        android:layout_marginBottom="27dp"
+        android:id="@+id/adView"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
